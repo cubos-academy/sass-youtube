@@ -1,0 +1,5 @@
+@import "./mixins.scss";
+
+.btn-primary {
+  @include style-button;
+}
