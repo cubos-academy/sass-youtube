@@ -2,6 +2,7 @@ import { useState } from "react";
 import Task from "../../components/Task";
 import { TaskType } from "../../types/TaskType";
 import "./styles.scss";
+import styles from "./styles.module.scss";
 
 function Home() {
   const [tasks, setTasks] = useState<TaskType[]>([]);
@@ -42,6 +43,10 @@ function Home() {
         <div className="column-2">COLUNA 2</div>
         <div className="column-3">COLUNA 3</div>
       </div>
+      <p className={styles.item}>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis,
+        repellendus.
+      </p>
     </div>
   );
 }

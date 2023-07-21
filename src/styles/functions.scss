@@ -1,10 +1,10 @@
 @function px-to-rem($pixels, $base-font-size: 16) {
-  @return ($pixels / $base-font-size) * 1rem;
+  @return calc($pixels / $base-font-size) * 1rem;
 }
 
 @function column-large($columns) {
   $total-columns: 12;
-  $column-large: (100% / $total-columns) * $columns;
+  $column-large: calc(100% / $total-columns) * $columns;
 
   @return $column-large;
 }
